@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/VwwD7hP/c147f642abc5e02fae135c249bcbaa6e.webp",
+    "name": "John Doe",
+    "position": "Event Coordinator"
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/jJ7yFNN/6b51421641eb4be453a98c2cce254eb3.webp",
+    "name": "Jane Smith",
+    "position": "Marketing Specialist"
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/0y35mzB/ac7ccd589c14a2a319af8fafacdde773.webp",
+    "name": "Michael Johnson",
+    "position": "Operations Manager"
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/B4yRzVg/43a006469255d72ba808e71383dddda6.webp",
+    "name": "Samantha Lee",
+    "position": "Graphic Designer"
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/NTF8bhn/b396054aa9bb327b6f1ecf8f8ceb0a7b.webp",
+    "name": "David Kim",
+    "position": "Social Media Manager"
+  },
+  {
+    "id": 6,
+    "img": "https://i.postimg.cc/d12KvZ0r/0ae582549fe986f9cebfab3c01e15f9a.webp",
+    "name": "Emily Davis",
+    "position": "Sponsorship Coordinator"
+  },
+  {
+    "id": 7,
+    "img": "https://i.postimg.cc/J7Q5H7Dq/21b8f49b81b7054076d495ef4031f463.webp",
+    "name": "Robert Chen",
+    "position": "Technical Support"
+  },
+  {
+    "id": 8,
+    "img": "https://i.postimg.cc/tCxRmJ3d/d665314a520f4260192ef37b38d5bfa1.webp",
+    "name": "Jennifer Brown",
+    "position": "Public Relations"
+  },
+  {
+    "id": 9,
+    "img": "https://i.postimg.cc/y8TDvWKQ/c4dc09ecaddcc9ff6f049d1f629de9b6.webp",
+    "name": "Daniel Wilson",
+    "position": "Logistics Specialist"
+  },
+  {
+    "id": 10,
+    "img": "https://i.postimg.cc/PqRrRwR4/42ad2a62c6b039ac93fce9759af1a9d6.webp",
+    "name": "Melissa Taylor",
+    "position": "Content Creator"
+  },
+  {
+    "id": 11,
+    "img": "https://i.postimg.cc/T2mYthqV/2897dc40e0af4be3058b707cca033f76.webp",
+    "name": "James Rodriguez",
+    "position": "Video Production"
+  },
+  {
+    "id": 12,
+    "img": "https://i.postimg.cc/ydLh5vzG/e5d76beb1919a51f2be2b45c89c8de99.webp",
+    "name": "Amanda Smith",
+    "position": "Finance Manager"
+  }
+]

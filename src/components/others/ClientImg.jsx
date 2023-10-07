@@ -2,7 +2,7 @@ import fiba from "/partner/fiba.png";
 import game from "/partner/gameinsight.png";
 import asus from "/partner/asus.png";
 import garena from "/partner/garena.png";
-import hp from "/partner/hp2.png";
+import hp from "/partner/hp3.png";
 import imt from "/partner/imt.png";
 import lg from "/partner/lg3.png";
 import monstar from "/partner/monstar.webp";

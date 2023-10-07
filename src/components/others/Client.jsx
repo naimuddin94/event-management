@@ -3,7 +3,7 @@ import images from "./ClientImg";
 
 const Client = () => {
   return (
-    <div className="bg-gradient-to-t from-gray-700 to-gray-200">
+    <div className="bg-[url('/images/cool-back-1.png')] bg-cover bg-center bg-no-repeat bg-black/25 bg-blend-overlay pb-8">
       <h1 className="text-3xl md:text-6xl font-black text-center py-10 md:py-16 bg-gradient-to-t from-[#1D267D] to-[#321E1E] bg-clip-text text-transparent">
         Our Partners
       </h1>
