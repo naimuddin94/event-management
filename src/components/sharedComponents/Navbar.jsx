@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
         <a className="btn btn-ghost normal-case text-xl font-satisfy font-bold">EventSphere</a>
       </div>
-      <div className="navbar-end flex gap-16">
+      <div className="navbar-end flex gap-10">
         <div className="hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <NavLi />
