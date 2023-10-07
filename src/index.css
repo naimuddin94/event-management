@@ -9,7 +9,7 @@
     @apply hover:text-pink-500 duration-200 cursor-pointer;
   }
 
-  .divHover {
-    @apply hover:shadow-lg duration-200;
+  .background {
+    @apply bg-[url('https://i.postimg.cc/pXphb1cf/blob-scene-haikei-2.png')] bg-cover bg-center  bg-black/30 bg-blend-overlay -mt-20;
   }
 }

@@ -5,6 +5,7 @@ import NotFound from "../pages/error/NotFound";
 import Register from "../pages/register/Register";
 import Login from "../pages/login/Login";
 import Projects from "../pages/projects/Projects";
+import Services from "../pages/services/Services";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
         path: "/projects",
         element: <Projects />,
         loader: () => fetch("/projects.json"),
+      },
+      {
+        path: "/services",
+        element: <Services />,
       },
     ],
   },
