@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "company": "GameXperience",
+    "img": "https://i.postimg.cc/xjBTwjwR/2-1024x768.jpg",
+    "place": "Convention Center A",
+    "description": "Immerse in the latest gaming trends and experiences at GameXperience!"
+  },
+  {
+    "id": 2,
+    "company": "TechSphere",
+    "img": "https://i.postimg.cc/Njks265J/24a929c3-ffbe-4d30-80ae-9cb53b245306.png",
+    "place": "Innovation Hub",
+    "description": "Explore cutting-edge technologies and innovations at TechSphere."
+  },
+  {
+    "id": 3,
+    "company": "PixelFest",
+    "img": "https://i.postimg.cc/mk7ff49X/1678303664754.png",
+    "place": "Tech Park",
+    "description": "A celebration of all things pixelated and digital at PixelFest!"
+  },
+  {
+    "id": 4,
+    "company": "VR World Summit",
+    "img": "https://i.postimg.cc/FKkTnZ3G/ASEAN-Gaming-Summit-2023-PAGCOR-Keynote.jpg",
+    "place": "Virtual Reality Arena",
+    "description": "Dive into the immersive world of virtual reality at VR World Summit."
+  },
+  {
+    "id": 5,
+    "company": "GameMasters",
+    "img": "https://i.postimg.cc/VvggbHPs/atsg-3-220815.webp",
+    "place": "Gaming Stadium",
+    "description": "Where the masters of gaming come together to compete and showcase their skills."
+  },
+  {
+    "id": 6,
+    "company": "CodeCon",
+    "img": "https://i.postimg.cc/Y9wzDwpq/banner.jpg",
+    "place": "Code Labs",
+    "description": "The ultimate gathering for developers, coders, and tech enthusiasts at CodeCon."
+  },
+  {
+    "id": 7,
+    "company": "eSports Carnival",
+    "img": "https://i.postimg.cc/vZrBLRSv/CL2021-Singapore.jpg",
+    "place": "eSports Arena",
+    "description": "Experience the thrill of competitive gaming at eSports Carnival."
+  },
+  {
+    "id": 8,
+    "company": "Robotics Expo",
+    "img": "https://i.postimg.cc/rFWWbPPD/Company-Conference-Stage.jpg",
+    "place": "Robotics Pavilion",
+    "description": "Witness the latest advancements in robotics technology at Robotics Expo."
+  },
+  {
+    "id": 9,
+    "company": "AI Innovators",
+    "img": "https://i.postimg.cc/wjpJdQC0/Conference-Organisers-Event.jpg",
+    "place": "AI Labs",
+    "description": "Unleashing the power of artificial intelligence at AI Innovators."
+  },
+  {
+    "id": 10,
+    "company": "Gamer's Paradise",
+    "img": "https://i.postimg.cc/fbH0mnJr/EGX-gaming-events-london-2019.jpg",
+    "place": "Gaming Lounge",
+    "description": "Where gamers find their ultimate paradise of games and entertainment."
+  },
+  {
+    "id": 11,
+    "company": "Tech Titans Expo",
+    "img": "https://i.postimg.cc/dVw7ftCf/game-exhibition.jpg",
+    "place": "Tech Hub",
+    "description": "Connecting with the titans of the tech industry at Tech Titans Expo."
+  },
+  {
+    "id": 12,
+    "company": "CyberSecurity Summit",
+    "img": "https://i.postimg.cc/26sy7zm2/image1.jpg",
+    "place": "Security Center",
+    "description": "Unraveling the latest trends and solutions in cybersecurity at the CyberSecurity Summit."
+  }
+]
