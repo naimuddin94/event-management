@@ -28,7 +28,7 @@ const Navbar = () => {
             <NavLi />
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl font-satisfy font-bold">EventSphere</a>
+        <a className="btn btn-ghost normal-case text-2xl md:text-3xl font-satisfy font-bold">EventSphere</a>
       </div>
       <div className="navbar-end flex gap-10">
         <div className="hidden lg:flex">

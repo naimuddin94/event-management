@@ -1,5 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&family=Satisfy&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .social {
+    @apply hover:text-pink-500 duration-200 cursor-pointer;
+  }
+
+  .divHover {
+    @apply hover:shadow-lg duration-200;
+  }
+}

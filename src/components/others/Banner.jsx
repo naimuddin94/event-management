@@ -4,9 +4,9 @@ const Banner = () => {
       <div className="md:pl-20 lg:pl-36 px-8">
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-black py-5">
           <span className="bg-gradient-to-t from-orange-600 to-rose-800 text-5xl md:text-6xl lg:text-8xl bg-clip-text text-transparent">
-            O
+            E
           </span>
-          rganizer <br /> Agency
+          manage <br /> Agency
         </h1>
         <p className="font-mono max-w-xs">
           We help brands and game devs reach
