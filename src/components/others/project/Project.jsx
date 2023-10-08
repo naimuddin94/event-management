@@ -4,7 +4,10 @@ import { GrLocation } from "react-icons/gr";
 const Project = ({ project }) => {
   const { img, company, place, description, date } = project;
   return (
-    <div className="rounded-lg shadow backdrop-blur-md bg-white/5 pb-2 min-h-fit">
+    <div
+      data-aos="zoom-out-up"
+      className="rounded-lg shadow backdrop-blur-md bg-white/5 pb-2 min-h-fit"
+    >
       <div className="h-1/2">
         <img className="rounded-t-lg w-full h-full" src={img} alt="" />
       </div>

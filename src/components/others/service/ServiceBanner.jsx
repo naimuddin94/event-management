@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 const ServiceBanner = () => {
   return (
     <div className="pt-20 h-96">
-      <div className="relative h-96">
+      <div data-aos="zoom-in-up" className="relative h-96">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <h1 className="text-md md:text-lg font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-4 md:px-8 ring-8 py-2 rounded-full w-fit">
             Gaming & Tech

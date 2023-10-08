@@ -6,7 +6,10 @@ const Login = () => {
   return (
     <section className="-mt-20 py-16 md:py-10 bg-[url('/images/login.jpg')] bg-cover  bg-black/40 bg-blend-overlay">
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-        <div className="w-full backdrop-blur-md rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:border-gray-700">
+        <div
+          data-aos="flip-left"
+          className="w-full backdrop-blur-md rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:border-gray-700"
+        >
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
             <h1 className="text-2xl font-bold leading-tight tracking-tight md:text-4xl text-white text-center">
               Login

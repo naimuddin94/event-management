@@ -1,6 +1,10 @@
 const Footer = () => {
   return (
-    <footer className="footer justify-center md:justify-around p-16 text-slate-300 bg-[url('/images/blob-10.png')] bg-cover bg-center bg-no-repeat bg-black/60 bg-blend-overlay">
+    <footer
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      className="footer justify-center md:justify-around p-16 text-slate-300 bg-[url('/images/blob-10.png')] bg-cover bg-center bg-no-repeat bg-black/60 bg-blend-overlay"
+    >
       <nav>
         <header className="footer-title">Services</header>
         <a className="link link-hover">Branding</a>

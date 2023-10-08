@@ -4,7 +4,10 @@ import { FaFacebookSquare, FaTwitterSquare, FaLinkedin } from "react-icons/fa";
 const TeamCard = ({ member }) => {
   const { img, position, name } = member;
   return (
-    <div className="relative flex flex-col rounded-xl text-gray-700 shadow-xl bg-[url('/images/blob.png')] bg-cover ">
+    <div
+      data-aos="fade-down-right"
+      className="relative flex flex-col rounded-xl text-gray-700 shadow-xl bg-[url('/images/blob.png')] bg-cover "
+    >
       <div className="relative mx-4 mt-4 h-56 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
         <img src={img} alt="profile-picture" className="w-full h-full" />
       </div>

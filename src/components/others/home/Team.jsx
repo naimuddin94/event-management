@@ -3,7 +3,10 @@ import TeamCard from "./TeamCard";
 
 const Team = ({ members }) => {
   return (
-    <div className="bg-[url('/images/cool-background.svg')] bg-cover bg-no-repeat bg-center bg-black/5 bg-blend-overlay pb-10">
+    <div
+      data-aos="fade-left"
+      className="bg-[url('/images/cool-background.svg')] bg-cover bg-no-repeat bg-center bg-black/5 bg-blend-overlay pb-10"
+    >
       <div className="p-8 text-center md:text-end">
         <h1 className="text-5xl md:text-7xl font-black bg-gradient-to-t from-[#1D267D] to-[#CD1818] bg-clip-text text-transparent">
           A-Team

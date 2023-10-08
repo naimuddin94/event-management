@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 const Package = ({ service }) => {
   const { id, name, features, management_for, price } = service;
   return (
-    <div className="backdrop-blur shadow-md bg-clip-border border border-gray-700 shadow-pink-900 rounded-xl text-slate-200 px-16 py-8">
+    <div
+      data-aos="flip-right"
+      className="backdrop-blur shadow-md bg-clip-border border border-gray-700 shadow-pink-900 rounded-xl text-slate-200 px-16 py-8"
+    >
       <div className="relative m-0 mb-8 overflow-hidden rounded-none border-b border-white/10 bg-transparent bg-clip-border pb-8 text-center text-gray-700 shadow-none">
         <p className="block font-sans text-sm font-normal uppercase leading-normal text-white antialiased">
           {name}

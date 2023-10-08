@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const ReviewCard = ({ review }) => {
   const { name, img, description, company_name } = review;
   return (
-    <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-transparent bg-clip-border text-gray-200 shadow-none p-8 bg-slate-900 m-6">
+    <div className="flex w-full max-w-[26rem] flex-col rounded-xl text-gray-200 shadow-none p-8 bg-slate-800 m-6">
       <div className="relative mx-0 mt-4 flex items-center gap-4 overflow-hidden rounded-xl bg-transparent bg-clip-border pt-0 pb-8 text-gray-700 shadow-none">
         <img
           src={img}
