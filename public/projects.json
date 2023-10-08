@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "date": "25th December 2022",
     "company": "GameXperience",
     "img": "https://i.postimg.cc/xjBTwjwR/2-1024x768.jpg",
     "place": "Convention Center A",
@@ -8,6 +9,7 @@
   },
   {
     "id": 2,
+    "date": "22th September 2022",
     "company": "TechSphere",
     "img": "https://i.postimg.cc/Njks265J/24a929c3-ffbe-4d30-80ae-9cb53b245306.png",
     "place": "Innovation Hub",
@@ -15,6 +17,7 @@
   },
   {
     "id": 3,
+    "date": "15th December 2021",
     "company": "PixelFest",
     "img": "https://i.postimg.cc/mk7ff49X/1678303664754.png",
     "place": "Tech Park",
@@ -22,6 +25,7 @@
   },
   {
     "id": 4,
+    "date": "2nd October 2021",
     "company": "VR World Summit",
     "img": "https://i.postimg.cc/FKkTnZ3G/ASEAN-Gaming-Summit-2023-PAGCOR-Keynote.jpg",
     "place": "Virtual Reality Arena",
@@ -29,6 +33,7 @@
   },
   {
     "id": 5,
+    "date": "24th August 2021",
     "company": "GameMasters",
     "img": "https://i.postimg.cc/VvggbHPs/atsg-3-220815.webp",
     "place": "Gaming Stadium",
@@ -36,6 +41,7 @@
   },
   {
     "id": 6,
+    "date": "16th December 2020",
     "company": "CodeCon",
     "img": "https://i.postimg.cc/Y9wzDwpq/banner.jpg",
     "place": "Code Labs",
@@ -43,6 +49,7 @@
   },
   {
     "id": 7,
+    "date": "20th November 2021",
     "company": "eSports Carnival",
     "img": "https://i.postimg.cc/vZrBLRSv/CL2021-Singapore.jpg",
     "place": "eSports Arena",
@@ -50,6 +57,7 @@
   },
   {
     "id": 8,
+    "date": "28th December 2020",
     "company": "Robotics Expo",
     "img": "https://i.postimg.cc/rFWWbPPD/Company-Conference-Stage.jpg",
     "place": "Robotics Pavilion",
@@ -57,6 +65,7 @@
   },
   {
     "id": 9,
+    "date": "18th February 2022",
     "company": "AI Innovators",
     "img": "https://i.postimg.cc/wjpJdQC0/Conference-Organisers-Event.jpg",
     "place": "AI Labs",
@@ -64,6 +73,7 @@
   },
   {
     "id": 10,
+    "date": "17th December 2019",
     "company": "Gamer's Paradise",
     "img": "https://i.postimg.cc/fbH0mnJr/EGX-gaming-events-london-2019.jpg",
     "place": "Gaming Lounge",
@@ -71,6 +81,7 @@
   },
   {
     "id": 11,
+    "date": "11th January 2022",
     "company": "Tech Titans Expo",
     "img": "https://i.postimg.cc/dVw7ftCf/game-exhibition.jpg",
     "place": "Tech Hub",
@@ -78,6 +89,7 @@
   },
   {
     "id": 12,
+    "date": "26th April 2022",
     "company": "CyberSecurity Summit",
     "img": "https://i.postimg.cc/26sy7zm2/image1.jpg",
     "place": "Security Center",

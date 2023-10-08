@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "name": "Essential Expo Experience",
+    "description": "Immerse your audience in the latest gaming and tech trends with our Essential Expo Experience package. This package is perfect for companies looking to showcase their products and services to a wide audience. We provide end-to-end event management, from venue selection to marketing and logistics. With our expertise, you can confidently host an unforgettable event that leaves a lasting impact.",
+    "image": "https://images.unsplash.com/photo-1588865198054-c83788106132?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "price": 1200,
+    "features": [
+      "Venue selection and setup",
+      "Marketing and promotional support",
+      "Registration management",
+      "Technical support",
+      "Networking opportunities"
+    ],
+    "management_for": 2000
+  },
+
+  {
+    "id": 2,
+    "name": "Tech Talk Symposium",
+    "description": "The Tech Talk Symposium package is designed for those seeking a platform to engage with industry thought leaders and experts. This package includes expert panel discussions, workshops, and networking opportunities. With our comprehensive event planning, branding, and marketing services, you can ensure a successful and insightful event. Elevate your presence in the tech community with Tech Talk Symposium.",
+    "image": "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+    "price": 1600,
+    "features": [
+      "Expert panel discussions",
+      "Interactive workshops",
+      "Branding and marketing support",
+      "Registration management",
+      "Networking opportunities"
+    ],
+    "management_for": 3000
+  },
+  {
+    "id": 3,
+    "name": "Gamer's Paradise Challenge",
+    "description": "For the ultimate gaming experience, choose our Gamer's Paradise Challenge package. This package caters to gaming enthusiasts and competitive players. It includes tournament organization, live streaming, and prize distributions. With our skilled team, you can host a high-energy event that will thrill participants and spectators alike. Let's bring the gaming community together with Gamer's Paradise Challenge.",
+    "image": "https://images.unsplash.com/photo-1596522354195-e84ae3c98731?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1787&q=80",
+    "price": 2000,
+    "features": [
+      "Tournament organization",
+      "Live streaming services",
+      "Prize distributions",
+      "Technical support",
+      "Networking opportunities"
+    ],
+    "management_for": 5000
+  }
+]
