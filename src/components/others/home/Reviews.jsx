@@ -4,7 +4,7 @@ import ReviewCard from "./ReviewCard";
 
 const Reviews = ({ reviews }) => {
   return (
-    <div data-aos="fade-up" data-aos-anchor-placement="bottom-center">
+    <div data-aos="fade-up">
       <div>
         <h1 className="text-2xl md:text-4xl font-black text-center pt-8 bg-gradient-to-t from-[#1D267D] to-[#321E1E] bg-clip-text text-transparent">
           Our client reviews

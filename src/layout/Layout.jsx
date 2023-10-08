@@ -15,7 +15,7 @@ const Layout = () => {
   }, []);
 
   return (
-    <div className="font-inter">
+    <div className="font-inter container mx-auto overflow-hidden">
       <Navbar />
       <Outlet />
       <Footer />

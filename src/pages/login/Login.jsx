@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 import Checkbox from "../../components/utilityComponents/Checkbox";
 import Input from "../../components/utilityComponents/Input";
+import SocialLoginBtn from "../../components/sharedComponents/SocialLoginBtn";
 
 const Login = () => {
   return (
-    <section className="-mt-20 py-16 md:py-10 bg-[url('/images/login.jpg')] bg-cover  bg-black/40 bg-blend-overlay">
+    <section className="-mt-20 py-16 h-fit md:py-36 bg-[url('/images/login.jpg')] bg-cover  bg-black/40 bg-blend-overlay">
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <div
           data-aos="flip-left"
-          className="w-full backdrop-blur-md rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:border-gray-700"
+          className="w-full backdrop-blur-md rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 border-gray-700"
         >
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
             <h1 className="text-2xl font-bold leading-tight tracking-tight md:text-4xl text-white text-center">
@@ -59,6 +60,7 @@ const Login = () => {
                 </Link>
               </p>
             </form>
+            <SocialLoginBtn />
           </div>
         </div>
       </div>
