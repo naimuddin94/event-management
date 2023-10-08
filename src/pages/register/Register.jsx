@@ -1,13 +1,44 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Checkbox from "../../components/utilityComponents/Checkbox";
 import Input from "../../components/utilityComponents/Input";
 import SocialLoginBtn from "../../components/sharedComponents/SocialLoginBtn";
+import useAuthInfo from "../../hooks/useAuthInfo";
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
-  const handleRegister = (e) => {
-    e.preventDefault();
-    const email = e.target.email.value;
-    console.log(email);
+  const { createUser, loading, setLoading } = useAuthInfo();
+  const navigate = useNavigate();
+
+  const handleRegister = (event) => {
+    event.preventDefault();
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+    const photo = event.target.photo.value;
+
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (!emailRegex.test(email)) {
+      return console.log("Email not valid");
+    }
+
+    createUser(email, password)
+      .then((result) => {
+        event.target.reset();
+        navigate("/");
+        // update profile
+        updateProfile(result.user, {
+          displayName: name,
+          photoURL: photo,
+        })
+          .then(() => console.log("User name update successfully"))
+          .catch((err) => console.log("During update profile", err));
+        console.log(result.user);
+      })
+      .catch((err) => {
+        setLoading(false);
+        err.message;
+      });
   };
 
   return (
@@ -59,7 +90,11 @@ const Register = () => {
                 type="submit"
                 className="btn btn-block btn-primary btn-active"
               >
-                Create an account
+                {loading ? (
+                  <span className="loading loading-spinner text-error"></span>
+                ) : (
+                  "Register"
+                )}
               </button>
               <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                 Already have an account?{" "}

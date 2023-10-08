@@ -1,6 +1,9 @@
+import useAuthInfo from "../../hooks/useAuthInfo";
 import NavLi from "./NavLi";
 
 const Navbar = () => {
+  const { user } = useAuthInfo();
+  console.log(user);
   return (
     <div className="navbar z-50 text-gray-100">
       <div className="navbar-start">
@@ -34,30 +37,17 @@ const Navbar = () => {
       </div>
       <div className="navbar-end flex gap-10">
         <div className="hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal items-center gap-2 px-1">
             <NavLi />
           </ul>
         </div>
+        <h2>{user && user?.displayName}</h2>
         <div className="dropdown dropdown-end">
-          <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+          <label className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <img src="/images/user.png" />
+              <img src={user?.photoURL ? user.photoURL : "/images/user.png"} />
             </div>
           </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-slate-700"
-          >
-            <li>
-              <a>Profile</a>
-            </li>
-            <li>
-              <a>Settings</a>
-            </li>
-            <li>
-              <a>Logout</a>
-            </li>
-          </ul>
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ import Login from "../pages/login/Login";
 import Projects from "../pages/projects/Projects";
 import Services from "../pages/services/Services";
 import ServiceDetail from "../pages/serviceDetail/ServiceDetail";
+import PrivateRoute from "./PrivateRoute";
 
 const homeLoader = async () => {
   const [members, packages, reviews] = await Promise.all([
@@ -39,12 +40,20 @@ const router = createBrowserRouter([
       },
       {
         path: "/projects",
-        element: <Projects />,
+        element: (
+          <PrivateRoute>
+            <Projects />
+          </PrivateRoute>
+        ),
         loader: () => fetch("/projects.json"),
       },
       {
         path: "/services",
-        element: <Services />,
+        element: (
+          <PrivateRoute>
+            <Services />
+          </PrivateRoute>
+        ),
         loader: () => fetch("/packagelist.json"),
       },
       {

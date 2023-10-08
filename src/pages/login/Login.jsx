@@ -1,9 +1,31 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Checkbox from "../../components/utilityComponents/Checkbox";
 import Input from "../../components/utilityComponents/Input";
 import SocialLoginBtn from "../../components/sharedComponents/SocialLoginBtn";
+import useAuthInfo from "../../hooks/useAuthInfo";
 
 const Login = () => {
+  const { loginUser, loading, setLoading } = useAuthInfo();
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    loginUser(email, password)
+      .then((result) => {
+        console.log(result.user);
+        navigate(location.state ? location.state : "/");
+        e.target.reset();
+      })
+      .catch((error) => {
+        setLoading(false);
+        console.log(error.message);
+      });
+  };
+
   return (
     <section className="-mt-20 py-16 h-fit md:py-36 bg-[url('/images/login.jpg')] bg-cover  bg-black/40 bg-blend-overlay">
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
@@ -15,7 +37,7 @@ const Login = () => {
             <h1 className="text-2xl font-bold leading-tight tracking-tight md:text-4xl text-white text-center">
               Login
             </h1>
-            <form className="space-y-4 md:space-y-6">
+            <form onSubmit={handleLogin} className="space-y-4 md:space-y-6">
               <Input type="email" name="email" placeholder="Enter your email">
                 Email
               </Input>
@@ -48,7 +70,11 @@ const Login = () => {
                 type="submit"
                 className="btn btn-block btn-primary btn-active"
               >
-                Login
+                {loading ? (
+                  <span className="loading loading-spinner text-error"></span>
+                ) : (
+                  "Login"
+                )}
               </button>
               <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                 Don’t have an account yet?{" "}

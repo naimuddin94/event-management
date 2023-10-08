@@ -1,12 +1,16 @@
+import { useLocation, useNavigate } from "react-router-dom";
 import useAuthInfo from "../../hooks/useAuthInfo";
 
 const SocialLoginBtn = () => {
   const { signInWithGoogle } = useAuthInfo();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleLogin = (provider) => {
     if (provider === "google") {
       signInWithGoogle()
         .then((result) => {
+          navigate(location.state ? location.state : "/");
           console.log(result.user);
         })
         .catch((err) => {
