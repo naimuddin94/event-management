@@ -29,7 +29,7 @@ const Login = () => {
               <div className="flex items-center justify-between">
                 <div className="flex items-start">
                   <div className="flex items-center h-5">
-                    <Checkbox required={false} />
+                    <Checkbox />
                   </div>
                   <div className="ml-3 text-sm">
                     <label className="text-gray-500 dark:text-gray-300">

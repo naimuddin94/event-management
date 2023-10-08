@@ -44,7 +44,7 @@ const Register = () => {
               </Input>
               <div className="flex items-start">
                 <div className="flex items-center h-5">
-                  <Checkbox required={true} />
+                  <Checkbox required />
                 </div>
                 <div className="ml-3 text-sm">
                   <label className="font-light text-gray-500 dark:text-gray-300">

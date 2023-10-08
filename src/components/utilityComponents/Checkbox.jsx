@@ -11,7 +11,7 @@ const Checkbox = (props) => {
 };
 
 Checkbox.propTypes = {
-  required: PropTypes.object,
+  required: PropTypes.any,
 };
 
 export default Checkbox;
