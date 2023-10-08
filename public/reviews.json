@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et.",
+    "img": "https://images.unsplash.com/photo-1603707281027-aeaec3d0ecbc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "rating": 4.5,
+    "company_name": "Tech Innovators Inc."
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.",
+    "img": "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "rating": 5,
+    "company_name": "Gaming Creations Co."
+  },
+  {
+    "id": 3,
+    "name": "Sarah Davis",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "img": "https://plus.unsplash.com/premium_photo-1688350808212-4e6908a03925?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+    "rating": 4,
+    "company_name": "Virtual Realms Ltd."
+  },
+  {
+    "id": 4,
+    "name": "Robert Lee",
+    "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
+    "img": "https://images.unsplash.com/photo-1615208429553-d9982932ca5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "rating": 3.5,
+    "company_name": "TechSolutions Corp."
+  },
+  {
+    "id": 5,
+    "name": "Michael Johnson",
+    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+    "img": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2048&q=80",
+    "rating": 4.8,
+    "company_name": "Innovative Gaming Systems"
+  },
+  {
+    "id": 6,
+    "name": "Emily Chen",
+    "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+    "img": "https://images.unsplash.com/photo-1541447049383-911a71d68407?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "rating": 4.2,
+    "company_name": "Future Tech Enterprises"
+  },
+  {
+    "id": 7,
+    "name": "David Brown",
+    "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+    "img": "https://images.unsplash.com/photo-1610795384821-2eed2f416f16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "rating": 4.6,
+    "company_name": "Infinite Game Studios"
+  },
+  {
+    "id": 8,
+    "name": "Jennifer Kim",
+    "description": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil moles.",
+    "img": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "rating": 4.7,
+    "company_name": "Tech Titans"
+  }
+]

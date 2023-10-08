@@ -1,16 +1,18 @@
 import { useLoaderData } from "react-router-dom";
-import Banner from "../../components/others/Banner";
-import Client from "../../components/others/Client";
-import Team from "../../components/others/Team";
 import Packages from "../../components/others/service/Packages";
+import Banner from "../../components/others/home/Banner";
+import Client from "../../components/others/home/Client";
+import Team from "../../components/others/home/Team";
+import Reviews from "../../components/others/home/Reviews";
 
 const Home = () => {
-  const { members, packages } = useLoaderData();
+  const { members, packages, reviews } = useLoaderData();
   return (
     <>
       <Banner />
       <Client />
       <Team members={members} />
+      <Reviews reviews={reviews} />
       <Packages packages={packages} />
     </>
   );

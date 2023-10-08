@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
 import { BsCheck2Circle } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Package = ({ service }) => {
-  const { name, features, management_for, price } = service;
+  const { id, name, features, management_for, price } = service;
   return (
     <div className="backdrop-blur shadow-md bg-clip-border border border-gray-700 shadow-pink-900 rounded-xl text-slate-200 px-16 py-8">
       <div className="relative m-0 mb-8 overflow-hidden rounded-none border-b border-white/10 bg-transparent bg-clip-border pb-8 text-center text-gray-700 shadow-none">
@@ -32,9 +33,11 @@ const Package = ({ service }) => {
         </ul>
       </div>
       <div className="mt-12 p-0">
-        <button className="btn btn-block btn-primary btn-active">
-          Details
-        </button>
+        <Link to={`/service/${id}`}>
+          <button className="btn btn-block btn-secondary btn-active">
+            Details
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import Project from "../../components/others/Project";
+import Project from "../../components/others/project/Project";
 
 const Projects = () => {
   const projects = useLoaderData();

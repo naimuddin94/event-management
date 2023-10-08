@@ -14,9 +14,7 @@ const Project = ({ project }) => {
         </h2>
         <h5 className="text-gray-400 text-sm pb-2">{date}</h5>
 
-        <p className="mb-3 font-normal text-gray-400">
-          {description}
-        </p>
+        <p className="mb-3 font-normal text-gray-400">{description}</p>
         <p className="bg-blue-500 px-4 py-1 rounded-md w-fit text-white font-medium flex items-center gap-1">
           <GrLocation /> {place}
         </p>

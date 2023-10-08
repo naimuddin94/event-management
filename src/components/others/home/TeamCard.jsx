@@ -16,7 +16,7 @@ const TeamCard = ({ member }) => {
           {position}
         </p>
       </div>
-      <div className="flex justify-around p-6 text-2xl text-blue-400 pt-2">
+      <div className="flex justify-around p-6 text-2xl text-slate-200 pt-2">
         <FaFacebookSquare className="social" />
         <FaTwitterSquare className="social" />
         <FaLinkedin className="social" />

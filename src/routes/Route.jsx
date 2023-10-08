@@ -6,14 +6,16 @@ import Register from "../pages/register/Register";
 import Login from "../pages/login/Login";
 import Projects from "../pages/projects/Projects";
 import Services from "../pages/services/Services";
+import ServiceDetail from "../pages/serviceDetail/ServiceDetail";
 
 const homeLoader = async () => {
-  const [members, packages] = await Promise.all([
+  const [members, packages, reviews] = await Promise.all([
     fetch("/team.json").then((response) => response.json()),
     fetch("/packagelist.json").then((response) => response.json()),
+    fetch("/reviews.json").then((response) => response.json()),
   ]);
 
-  return { members, packages };
+  return { members, packages, reviews };
 };
 
 const router = createBrowserRouter([
@@ -43,6 +45,11 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services />,
+        loader: () => fetch("/packagelist.json"),
+      },
+      {
+        path: "/service/:id",
+        element: <ServiceDetail />,
         loader: () => fetch("/packagelist.json"),
       },
     ],
