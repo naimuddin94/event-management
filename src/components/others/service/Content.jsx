@@ -1,6 +1,6 @@
 const Content = () => {
   return (
-    <section className="bg-gray-900 pt-16 md:py-10">
+    <section className="bg-gray-900 pt-16 lg:py-10">
       <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div className="font-light sm:text-lg text-gray-400">
           <h2 className="mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-white">
