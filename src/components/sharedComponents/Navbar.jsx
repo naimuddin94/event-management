@@ -6,8 +6,8 @@ const Navbar = () => {
   const { user } = useAuthInfo();
   const urlRegex = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i.test(user?.photoURL);
   return (
-    <div className="navbar z-50 max-w-[1440px] mx-auto text-gray-100 fixed backdrop-blur-sm px-4 md:px-8">
-      <div className="navbar-start">
+    <div className="navbar justify-between z-50 max-w-[1440px] mx-auto text-gray-100 fixed backdrop-blur-sm px-4 md:px-8">
+      <div className="">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -45,10 +45,10 @@ const Navbar = () => {
             <NavLi />
           </ul>
         </div>
-        <h2 className="text-slate-300 font-mono">
+        <h2 className="hidden sm:inline text-slate-300 font-mono">
           {user && user?.displayName}
         </h2>
-        <div className="">
+        <div className="justify-end">
           {user && (
             <label className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
