@@ -16,6 +16,10 @@
     @apply bg-gradient-to-t from-[#1D267D] to-[#321E1E] bg-clip-text text-transparent;
   }
 
+  .login-background {
+    @apply py-16  bg-[url('https://i.postimg.cc/DykNvdsj/login.jpg')] bg-cover  bg-black/40 bg-blend-overlay;
+  }
+
   .background {
     @apply bg-[url('https://i.postimg.cc/pXphb1cf/blob-scene-haikei-2.png')] bg-cover bg-center  bg-black/30 bg-blend-overlay;
   }

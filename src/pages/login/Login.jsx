@@ -34,7 +34,7 @@ const Login = () => {
   };
 
   return (
-    <section className="py-16 h-fit bg-[url('/images/login.jpg')] bg-cover  bg-black/40 bg-blend-overlay">
+    <section className="login-background">
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <div
           data-aos="flip-left"

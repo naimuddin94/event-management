@@ -6,7 +6,7 @@ const Navbar = () => {
   const { user } = useAuthInfo();
   const urlRegex = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i.test(user?.photoURL);
   return (
-    <div className="navbar z-50 text-gray-100 fixed backdrop-blur-sm px-4 md:px-8">
+    <div className="navbar z-50 max-w-[1440px] mx-auto text-gray-100 fixed backdrop-blur-sm px-4 md:px-8">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
