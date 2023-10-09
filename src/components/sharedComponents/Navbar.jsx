@@ -3,7 +3,6 @@ import NavLi from "./NavLi";
 
 const Navbar = () => {
   const { user } = useAuthInfo();
-  console.log(user);
   return (
     <div className="navbar z-50 text-gray-100">
       <div className="navbar-start">

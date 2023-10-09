@@ -9,6 +9,7 @@ import {
   signInWithPopup,
   signOut,
 } from "firebase/auth";
+
 import auth from "../firebase/firebase.config";
 
 export const AuthContext = createContext(null);

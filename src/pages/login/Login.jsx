@@ -3,6 +3,7 @@ import Checkbox from "../../components/utilityComponents/Checkbox";
 import Input from "../../components/utilityComponents/Input";
 import SocialLoginBtn from "../../components/sharedComponents/SocialLoginBtn";
 import useAuthInfo from "../../hooks/useAuthInfo";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const { loginUser, loading, setLoading } = useAuthInfo();
@@ -15,14 +16,16 @@ const Login = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     loginUser(email, password)
-      .then((result) => {
-        console.log(result.user);
+      .then(() => {
         navigate(location.state ? location.state : "/");
         e.target.reset();
       })
       .catch((error) => {
         setLoading(false);
-        console.log(error.message);
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode);
+        toast.error("Invalid user credentials");
       });
   };
 

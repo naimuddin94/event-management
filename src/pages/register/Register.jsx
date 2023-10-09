@@ -4,6 +4,7 @@ import Input from "../../components/utilityComponents/Input";
 import SocialLoginBtn from "../../components/sharedComponents/SocialLoginBtn";
 import useAuthInfo from "../../hooks/useAuthInfo";
 import { updateProfile } from "firebase/auth";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const { createUser, loading, setLoading } = useAuthInfo();
@@ -17,27 +18,45 @@ const Register = () => {
     const photo = event.target.photo.value;
 
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const hasUppercase = /[A-Z]/.test(password);
+    const hasNumber = /\d/.test(password);
+    const hasSpecialCharacter = /[!@#$%^&*(),.?":{}|<>]/.test(password);
 
     if (!emailRegex.test(email)) {
-      return console.log("Email not valid");
+      return toast.error("Email not valid");
+    }
+
+    if (password.length < 6) {
+      return toast.error("Password must be at least 6 characters");
+    }
+
+    if (!hasUppercase) {
+      return toast.error("Password doesn't capital letter.");
+    }
+    if (!hasNumber) {
+      return toast.error("Password doesn't contain any numbers.");
+    }
+    if (!hasSpecialCharacter) {
+      return toast.error("Password doesn't special character.");
     }
 
     createUser(email, password)
       .then((result) => {
         event.target.reset();
         navigate("/");
+
+        toast.success("Account created successfully");
         // update profile
         updateProfile(result.user, {
           displayName: name,
           photoURL: photo,
         })
           .then(() => console.log("User name update successfully"))
-          .catch((err) => console.log("During update profile", err));
-        console.log(result.user);
+          .catch((err) => toast.error("During update profile", err.message));
       })
       .catch((err) => {
         setLoading(false);
-        err.message;
+        toast.error("During error", err.message);
       });
   };
 

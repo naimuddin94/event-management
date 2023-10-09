@@ -12,4 +12,8 @@
   .background {
     @apply bg-[url('https://i.postimg.cc/pXphb1cf/blob-scene-haikei-2.png')] bg-cover bg-center  bg-black/30 bg-blend-overlay -mt-20;
   }
+
+  .clientBackground {
+    @apply bg-[url('/images/cool-back-1.png')] bg-cover bg-center bg-no-repeat bg-black/25 bg-blend-overlay pb-8;
+  }
 }
