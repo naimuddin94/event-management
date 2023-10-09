@@ -18,7 +18,7 @@ const Layout = () => {
   }, []);
 
   return (
-    <div className="font-inter container mx-auto overflow-hidden">
+    <div className="font-inter max-w-7xl mx-auto overflow-hidden">
       <Navbar />
       {navigation.state === "loading" ? (
         <div className="flex items-center justify-center h-[60vh]">

@@ -8,7 +8,7 @@ const NotFound = () => {
   console.log(searchValue.pathname);
   return (
     <div className="h-screen flex flex-col gap-5 items-center justify-center">
-      <TbError404 className="text-6xl" />
+      <TbError404 className="text-7xl md:text-9xl" />
       <h1 className="text-2xl font-semibold text-slate-600">
         Oops page not found!
       </h1>

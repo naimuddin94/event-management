@@ -13,7 +13,7 @@ const CustomLi = ({ path, children }) => {
           : ""
       }
     >
-      <li className="hover:backdrop-blur-lg duration-200 px-4 py-2 rounded-md">
+      <li className="hover:bg-slate-700 duration-200 px-4 py-2 rounded-md">
         {children}
       </li>
     </NavLink>

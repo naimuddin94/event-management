@@ -7,8 +7,8 @@ const Projects = () => {
   return (
     <div className="background">
       <div className="pt-28">
-        <h1 className="text-5xl text-center font-black text-slate-400">
-          PROJECTS
+        <h1 className="text-5xl text-center font-black heading-gradient to-[#BCA37F]">
+          Our Previews Works
         </h1>
         <h2 className="text-lg font-medium text-center text-slate-400">
           We made possible

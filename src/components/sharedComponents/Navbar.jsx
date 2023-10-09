@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useAuthInfo from "../../hooks/useAuthInfo";
 import NavLi from "./NavLi";
 
@@ -5,7 +6,7 @@ const Navbar = () => {
   const { user } = useAuthInfo();
   const urlRegex = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i.test(user?.photoURL);
   return (
-    <div className="navbar z-50 text-gray-100">
+    <div className="navbar z-50 text-gray-100 fixed backdrop-blur-sm px-4 md:px-8">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -31,17 +32,22 @@ const Navbar = () => {
             <NavLi />
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-2xl md:text-3xl font-satisfy font-bold">
+        <Link
+          to="/"
+          className="btn btn-ghost normal-case text-2xl md:text-3xl font-satisfy font-bold"
+        >
           EventSphere
-        </a>
+        </Link>
       </div>
-      <div className="navbar-end flex gap-10">
+      <div className="navbar-center flex gap-10">
         <div className="hidden lg:flex">
           <ul className="menu menu-horizontal items-center gap-2 px-1">
             <NavLi />
           </ul>
         </div>
-        <h2>{user && user?.displayName}</h2>
+        <h2 className="text-slate-300 font-mono">
+          {user && user?.displayName}
+        </h2>
         <div className="">
           {user && (
             <label className="btn btn-ghost btn-circle avatar">

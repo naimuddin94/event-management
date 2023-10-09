@@ -10,7 +10,7 @@ const NavLi = () => {
       <CustomLi path="/projects">Projects</CustomLi>
       {user ? (
         <button
-          className="btn glass text-slate-200 btn-sm btn-active"
+          className="custom-btn w-fit py-2"
           onClick={() => logOut()}
         >
           Logout

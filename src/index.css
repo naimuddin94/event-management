@@ -5,12 +5,19 @@
 @tailwind utilities;
 
 @layer components {
+  .custom-btn {
+    @apply w-full py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border font-medium text-gray-400 shadow-sm align-middle focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 transition-all text-sm bg-gray-800 hover:bg-slate-800 border-gray-700 hover:text-white focus:ring-offset-gray-800;
+  }
   .social {
     @apply hover:text-pink-500 duration-200 cursor-pointer;
   }
 
+  .heading-gradient {
+    @apply bg-gradient-to-t from-[#1D267D] to-[#321E1E] bg-clip-text text-transparent;
+  }
+
   .background {
-    @apply bg-[url('https://i.postimg.cc/pXphb1cf/blob-scene-haikei-2.png')] bg-cover bg-center  bg-black/30 bg-blend-overlay -mt-20;
+    @apply bg-[url('https://i.postimg.cc/pXphb1cf/blob-scene-haikei-2.png')] bg-cover bg-center  bg-black/30 bg-blend-overlay;
   }
 
   .clientBackground {

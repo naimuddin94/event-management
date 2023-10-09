@@ -10,8 +10,7 @@ import { useState } from "react";
 
 const Register = () => {
   const [error, setError] = useState(null);
-  const { createUser, loading, setLoading } =
-    useAuthInfo();
+  const { createUser, loading, setLoading } = useAuthInfo();
   const navigate = useNavigate();
 
   const handleRegister = (event) => {
@@ -57,14 +56,15 @@ const Register = () => {
       })
       .catch((err) => {
         setLoading(false);
-        toast.error("During error", err.message);
-        setError(null);
+        const errorCode = err.code;
+        const errMessage = errorCode.replace("auth/", "");
+        setError(errMessage);
       });
   };
 
   return (
-    <section className="-mt-20 py-16 h-fit md:py-60 bg-[url('/images/login.jpg')] bg-cover  bg-black/40 bg-blend-overlay">
-      <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+    <section className="py-16  bg-[url('/images/login.jpg')] bg-cover  bg-black/40 bg-blend-overlay">
+      <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto">
         <div
           data-aos="flip-left"
           className="w-full rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 backdrop-blur-lg border-gray-700"

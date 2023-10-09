@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import useAuthInfo from "../../hooks/useAuthInfo";
-import { AiFillGithub, AiFillGoogleCircle } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
+import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-toastify";
 
 const SocialLoginBtn = () => {
@@ -37,18 +38,12 @@ const SocialLoginBtn = () => {
   };
 
   return (
-    <div className="flex gap-5">
-      <button
-        onClick={() => handleLogin("google")}
-        className="btn btn-secondary flex-1"
-      >
-        <AiFillGoogleCircle />
+    <div className="flex  gap-2">
+      <button onClick={() => handleLogin("google")} className="custom-btn">
+        <FcGoogle />
         Google
       </button>
-      <button
-        onClick={() => handleLogin("github")}
-        className="btn bg-gray-600 text-white hover:brightness-95 hover:bg-gray-700 border-none flex-1"
-      >
+      <button onClick={() => handleLogin("github")} className="custom-btn">
         <AiFillGithub />
         Github
       </button>
