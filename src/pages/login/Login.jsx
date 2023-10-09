@@ -4,8 +4,11 @@ import Input from "../../components/utilityComponents/Input";
 import SocialLoginBtn from "../../components/sharedComponents/SocialLoginBtn";
 import useAuthInfo from "../../hooks/useAuthInfo";
 import { toast } from "react-toastify";
+import { useState } from "react";
+import ErrorAlert from "../../components/utilityComponents/ErrorAlert";
 
 const Login = () => {
+  const [error, setError] = useState(null);
   const { loginUser, loading, setLoading } = useAuthInfo();
 
   const navigate = useNavigate();
@@ -18,14 +21,15 @@ const Login = () => {
     loginUser(email, password)
       .then(() => {
         navigate(location.state ? location.state : "/");
+        toast.success("Login successfully");
+        setError(null);
         e.target.reset();
       })
-      .catch((error) => {
+      .catch((err) => {
         setLoading(false);
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorCode);
-        toast.error("Invalid user credentials");
+        const errorCode = err.code;
+        const errMessage = errorCode.replace("auth/", "");
+        setError(errMessage);
       });
   };
 
@@ -40,6 +44,7 @@ const Login = () => {
             <h1 className="text-2xl font-bold leading-tight tracking-tight md:text-4xl text-white text-center">
               Login
             </h1>
+            {error && <ErrorAlert>{error}</ErrorAlert>}
             <form onSubmit={handleLogin} className="space-y-4 md:space-y-6">
               <Input type="email" name="email" placeholder="Enter your email">
                 Email

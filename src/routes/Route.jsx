@@ -5,7 +5,7 @@ import NotFound from "../pages/error/NotFound";
 import Register from "../pages/register/Register";
 import Login from "../pages/login/Login";
 import Projects from "../pages/projects/Projects";
-import Services from "../pages/services/Services";
+import Blog from "../pages/blog/Blog";
 import ServiceDetail from "../pages/serviceDetail/ServiceDetail";
 import PrivateRoute from "./PrivateRoute";
 
@@ -48,10 +48,10 @@ const router = createBrowserRouter([
         loader: () => fetch("/projects.json"),
       },
       {
-        path: "/services",
+        path: "/blog",
         element: (
           <PrivateRoute>
-            <Services />
+            <Blog />
           </PrivateRoute>
         ),
         loader: () => fetch("/packagelist.json"),

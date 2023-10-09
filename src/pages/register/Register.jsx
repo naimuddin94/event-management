@@ -5,8 +5,11 @@ import SocialLoginBtn from "../../components/sharedComponents/SocialLoginBtn";
 import useAuthInfo from "../../hooks/useAuthInfo";
 import { updateProfile } from "firebase/auth";
 import { toast } from "react-toastify";
+import ErrorAlert from "../../components/utilityComponents/ErrorAlert";
+import { useState } from "react";
 
 const Register = () => {
+  const [error, setError] = useState(null);
   const { createUser, loading, setLoading } = useAuthInfo();
   const navigate = useNavigate();
 
@@ -19,32 +22,29 @@ const Register = () => {
 
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const hasUppercase = /[A-Z]/.test(password);
-    const hasNumber = /\d/.test(password);
     const hasSpecialCharacter = /[!@#$%^&*(),.?":{}|<>]/.test(password);
 
     if (!emailRegex.test(email)) {
-      return toast.error("Email not valid");
+      return setError("Email not valid");
     }
 
     if (password.length < 6) {
-      return toast.error("Password must be at least 6 characters");
+      return setError("Password less than 6 characters");
     }
 
     if (!hasUppercase) {
-      return toast.error("Password doesn't capital letter.");
+      return setError("Password don't have a capital letter");
     }
-    if (!hasNumber) {
-      return toast.error("Password doesn't contain any numbers.");
-    }
+
     if (!hasSpecialCharacter) {
-      return toast.error("Password doesn't special character.");
+      return setError("Password don't have a special character");
     }
 
     createUser(email, password)
       .then((result) => {
         event.target.reset();
         navigate("/");
-
+        setError(null);
         toast.success("Account created successfully");
         // update profile
         updateProfile(result.user, {
@@ -57,6 +57,7 @@ const Register = () => {
       .catch((err) => {
         setLoading(false);
         toast.error("During error", err.message);
+        setError(null);
       });
   };
 
@@ -71,6 +72,7 @@ const Register = () => {
             <h1 className="text-2xl text-center font-bold leading-tight tracking-tight md:text-4xl text-white">
               Register
             </h1>
+            {error && <ErrorAlert>{error}</ErrorAlert>}
             <form onSubmit={handleRegister} className="space-y-4 md:space-y-6">
               <Input type="text" name="name" placeholder="Enter your name">
                 Full Name

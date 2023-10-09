@@ -1,19 +1,13 @@
-import { NavLink } from "react-router-dom";
 import useAuthInfo from "../../hooks/useAuthInfo";
+import CustomLi from "../utilityComponents/CustomLi";
 
 const NavLi = () => {
   const { user, logOut } = useAuthInfo();
   return (
     <>
-      <li>
-        <NavLink to="/">Home</NavLink>
-      </li>
-      <li>
-        <NavLink to="/services">Services</NavLink>
-      </li>
-      <li>
-        <NavLink to="/projects">Projects</NavLink>
-      </li>
+      <CustomLi path="/">Home</CustomLi>
+      <CustomLi path="/blog">Blog</CustomLi>
+      <CustomLi path="/projects">Projects</CustomLi>
       {user ? (
         <button
           className="btn glass text-slate-200 btn-sm btn-active"
@@ -23,12 +17,8 @@ const NavLi = () => {
         </button>
       ) : (
         <>
-          <li>
-            <NavLink to="/login">Login</NavLink>
-          </li>
-          <li>
-            <NavLink to="/register">Register</NavLink>
-          </li>
+          <CustomLi path="/login">Login</CustomLi>
+          <CustomLi path="/register">Register</CustomLi>
         </>
       )}
     </>

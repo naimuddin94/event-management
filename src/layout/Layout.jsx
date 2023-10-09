@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigation } from "react-router-dom";
 import Navbar from "../components/sharedComponents/Navbar";
 import Footer from "../components/sharedComponents/Footer";
 import AOS from "aos";
@@ -8,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useEffect } from "react";
 
 const Layout = () => {
+  const navigation = useNavigation();
   useEffect(() => {
     AOS.init({
       duration: 600,
@@ -19,7 +20,13 @@ const Layout = () => {
   return (
     <div className="font-inter container mx-auto overflow-hidden">
       <Navbar />
-      <Outlet />
+      {navigation.state === "loading" ? (
+        <div className="flex items-center justify-center h-[60vh]">
+          <span className="loading loading-bars loading-lg"></span>
+        </div>
+      ) : (
+        <Outlet />
+      )}
       <Footer />
       <ToastContainer
         position="top-center"

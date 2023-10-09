@@ -1,5 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import useAuthInfo from "../../hooks/useAuthInfo";
+import { AiFillGithub, AiFillGoogleCircle } from "react-icons/ai";
+import { toast } from "react-toastify";
 
 const SocialLoginBtn = () => {
   const { signInWithGoogle } = useAuthInfo();
@@ -9,12 +11,14 @@ const SocialLoginBtn = () => {
   const handleLogin = (provider) => {
     if (provider === "google") {
       signInWithGoogle()
-        .then((result) => {
+        .then(() => {
           navigate(location.state ? location.state : "/");
-          console.log(result.user);
+          toast.success("Login successfully");
         })
         .catch((err) => {
-          console.log(err.message);
+          const errorCode = err.code;
+          const errMessage = errorCode.replace("auth/", "");
+          toast.error(errMessage);
         });
     }
   };
@@ -25,9 +29,11 @@ const SocialLoginBtn = () => {
         onClick={() => handleLogin("google")}
         className="btn btn-secondary flex-1"
       >
+        <AiFillGoogleCircle />
         Google
       </button>
       <button className="btn bg-gray-600 text-white hover:brightness-95 hover:bg-gray-700 border-none flex-1">
+        <AiFillGithub />
         Github
       </button>
     </div>
