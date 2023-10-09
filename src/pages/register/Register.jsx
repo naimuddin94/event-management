@@ -10,7 +10,8 @@ import { useState } from "react";
 
 const Register = () => {
   const [error, setError] = useState(null);
-  const { createUser, loading, setLoading } = useAuthInfo();
+  const { createUser, loading, setLoading } =
+    useAuthInfo();
   const navigate = useNavigate();
 
   const handleRegister = (event) => {

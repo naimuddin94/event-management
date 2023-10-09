@@ -3,6 +3,7 @@ import NavLi from "./NavLi";
 
 const Navbar = () => {
   const { user } = useAuthInfo();
+  const urlRegex = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i.test(user?.photoURL);
   return (
     <div className="navbar z-50 text-gray-100">
       <div className="navbar-start">
@@ -25,7 +26,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-slate-800"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-slate-100"
           >
             <NavLi />
           </ul>
@@ -41,12 +42,20 @@ const Navbar = () => {
           </ul>
         </div>
         <h2>{user && user?.displayName}</h2>
-        <div className="dropdown dropdown-end">
-          <label className="btn btn-ghost btn-circle avatar">
-            <div className="w-10 rounded-full">
-              <img src={user?.photoURL ? user.photoURL : "/images/user.png"} />
-            </div>
-          </label>
+        <div className="">
+          {user && (
+            <label className="btn btn-ghost btn-circle avatar">
+              <div className="w-10 rounded-full">
+                <img
+                  src={
+                    urlRegex
+                      ? user.photoURL
+                      : "https://i.postimg.cc/m2HKMNv9/istockphoto-1451587807-612x612.jpg"
+                  }
+                />
+              </div>
+            </label>
+          )}
         </div>
       </div>
     </div>

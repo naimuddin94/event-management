@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Small",
+    "name": "Essential Expo Experience",
     "description": "Immerse your audience in the latest gaming and tech trends with our Essential Expo Experience package. This package is perfect for companies looking to showcase their products and services to a wide audience. We provide end-to-end event management, from venue selection to marketing and logistics. With our expertise, you can confidently host an unforgettable event that leaves a lasting impact.",
     "image": "https://images.unsplash.com/photo-1588865198054-c83788106132?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     "price": 1000,
@@ -14,10 +14,9 @@
     ],
     "management_for": 2000
   },
-
   {
     "id": 2,
-    "name": "Medium",
+    "name": "Tech Talk Symposium",
     "description": "The Tech Talk Symposium package is designed for those seeking a platform to engage with industry thought leaders and experts. This package includes expert panel discussions, workshops, and networking opportunities. With our comprehensive event planning, branding, and marketing services, you can ensure a successful and insightful event. Elevate your presence in the tech community with Tech Talk Symposium.",
     "image": "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
     "price": 1400,
@@ -32,7 +31,7 @@
   },
   {
     "id": 3,
-    "name": "Large",
+    "name": "Gamer's Paradise Challenge",
     "description": "For the ultimate gaming experience, choose our Gamer's Paradise Challenge package. This package caters to gaming enthusiasts and competitive players. It includes tournament organization, live streaming, and prize distributions. With our skilled team, you can host a high-energy event that will thrill participants and spectators alike. Let's bring the gaming community together with Gamer's Paradise Challenge.",
     "image": "https://images.unsplash.com/photo-1596522354195-e84ae3c98731?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1787&q=80",
     "price": 2500,
@@ -44,5 +43,50 @@
       "Networking opportunities"
     ],
     "management_for": 5000
+  },
+  {
+    "id": 4,
+    "name": "Innovation Showcase",
+    "description": "Unveil the latest breakthroughs and innovations in the tech world with our Innovation Showcase package. This package is tailored for companies aiming to spotlight their cutting-edge products and technologies. We handle all aspects of event management, ensuring a seamless and impactful experience for your audience.",
+    "image": "https://images.unsplash.com/photo-1582192730841-2a682d7375f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+    "price": 3500,
+    "features": [
+      "Product showcase area",
+      "Expert demonstrations",
+      "Marketing and promotional support",
+      "Registration management",
+      "Networking opportunities"
+    ],
+    "management_for": 7000
+  },
+  {
+    "id": 5,
+    "name": "E-Sports Extravaganza",
+    "description": "Host the ultimate e-sports tournament with our E-Sports Extravaganza package. This package caters to the competitive gaming community, offering top-tier tournament organization, live streaming, and substantial prize pools. Our experienced team ensures a thrilling and memorable event for both participants and spectators.",
+    "image": "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+    "price": 4500,
+    "features": [
+      "Professional tournament organization",
+      "Live streaming services",
+      "Generous prize pools",
+      "Technical support",
+      "Networking opportunities"
+    ],
+    "management_for": 8000
+  },
+  {
+    "id": 6,
+    "name": "Startup Innovation Summit",
+    "description": "Highlight the groundbreaking ideas and startups shaping the tech landscape with our Startup Innovation Summit package. This package is designed for startups seeking exposure and investors looking for the next big thing. We provide a platform for pitch sessions, networking, and invaluable mentorship opportunities.",
+    "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+    "price": 5500,
+    "features": [
+      "Startup pitch sessions",
+      "Investor networking",
+      "Mentorship opportunities",
+      "Branding and marketing support",
+      "Registration management"
+    ],
+    "management_for": 9000
   }
 ]

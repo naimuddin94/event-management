@@ -58,7 +58,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/service/:id",
-        element: <ServiceDetail />,
+        element: (
+          <PrivateRoute>
+            <ServiceDetail />
+          </PrivateRoute>
+        ),
         loader: () => fetch("/packagelist.json"),
       },
     ],

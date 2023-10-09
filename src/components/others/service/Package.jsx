@@ -7,13 +7,13 @@ const Package = ({ service }) => {
   return (
     <div
       data-aos="flip-right"
-      className="backdrop-blur shadow-md bg-clip-border border border-gray-700 shadow-pink-900 rounded-xl text-slate-200 px-16 py-8"
+      className="backdrop-blur shadow-md bg-clip-border border border-gray-700 shadow-pink-900 rounded-xl text-slate-200 p-8"
     >
       <div className="relative m-0 mb-8 overflow-hidden rounded-none border-b border-white/10 bg-transparent bg-clip-border pb-8 text-center text-gray-700 shadow-none">
         <p className="block font-sans text-sm font-normal uppercase leading-normal text-white antialiased">
           {name}
         </p>
-        <h1 className="mt-6 flex justify-center gap-1 font-sans text-6xl font-bold tracking-normal text-white antialiased">
+        <h1 className="mt-6 flex justify-center gap-1 font-sans text-5xl lg:text-6xl font-bold tracking-normal text-white antialiased">
           <span className="mt-2 text-4xl">$</span>
           {price}
           <span className="self-end text-4xl">/for</span>
