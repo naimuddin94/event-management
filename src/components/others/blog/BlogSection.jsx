@@ -128,15 +128,15 @@ const BlogSection = () => {
           <div className="space-y-5 md:space-y-8">
             <div className="space-y-3">
               <h2 className="text-2xl font-bold md:text-3xl dark:text-white">
-                Announcing a free plan for small teams
+                Announcing a free advice for small event
               </h2>
 
               <p className="text-lg text-gray-800 dark:text-gray-200">
-                At preline, our mission has always been focused on bringing
-                openness and transparency to the design process. Weve always
-                believed that by providing a space where designers can share
-                ongoing work not only empowers them to make better products, it
-                also helps them grow.
+                Welcome to here, where we specialize in orchestrating
+                exceptional game and tech events that leave a lasting
+                impression. With a deep-rooted passion for the gaming and
+                technology industries, we curate experiences that bring together
+                enthusiasts, professionals, and industry leaders.
               </p>
             </div>
 
@@ -148,17 +148,17 @@ const BlogSection = () => {
             <figure>
               <img
                 className="w-full object-cover rounded-xl"
-                src="https://images.unsplash.com/photo-1670272505340-d906d8d77d03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                src="https://i.postimg.cc/dVw7ftCf/game-exhibition.jpg"
                 alt="Image Description"
               />
             </figure>
 
             <p className="text-lg text-gray-800 dark:text-gray-200">
-              As weve grown, weve seen how Preline has helped companies such as
-              Spotify, Microsoft, Airbnb, Facebook, and Intercom bring their
-              designers closer together to create amazing things. Weve also
-              learned that when the culture of sharing is brought in earlier,
-              the better teams adapt and communicate with one another.
+              Our portfolio includes a diverse range of events, from high-energy
+              gaming competitions to insightful tech conferences and workshops.
+              We take pride in creating dynamic platforms for networking,
+              knowledge sharing, and forging valuable connections within the
+              industry.
             </p>
 
             <p className="text-lg text-gray-800 dark:text-gray-200">
@@ -175,8 +175,9 @@ const BlogSection = () => {
 
             <blockquote className="text-center p-4 sm:px-7">
               <p className="text-xl font-medium text-gray-800 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal dark:text-gray-200">
-                To say that switching to Preline has been life-changing is an
-                understatement. My business has tripled and I got my life back.
+                We understand the importance of seamless event execution. Our
+                services encompass event planning, branding, marketing, and
+                logistics.
               </p>
               <p className="mt-5 text-gray-800 dark:text-gray-200">
                 Nicole Grazioso
@@ -186,7 +187,7 @@ const BlogSection = () => {
             <figure>
               <img
                 className="w-full object-cover rounded-xl"
-                src="https://images.unsplash.com/photo-1670272498380-eb330b61f3cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                src="https://i.postimg.cc/fbH0mnJr/EGX-gaming-events-london-2019.jpg"
                 alt="Image Description"
               />
               <figcaption className="mt-3 text-sm text-center text-gray-500">
@@ -211,25 +212,19 @@ const BlogSection = () => {
 
             <ul className="list-disc list-outside space-y-5 pl-5 text-lg text-gray-800 dark:text-gray-200">
               <li className="pl-2">
-                Preline allows us to collaborate in real time and is a really
-                great way for leadership on the team to stay up-to-date with
-                what everybody is working on,{" "}
-                <a
-                  className="text-blue-600 decoration-2 hover:underline font-medium"
-                  href="#"
-                >
+                With a finger on the pulse of industry trends and emerging
+                technologies, we deliver events that not only reflect the
+                current landscape but also anticipate future shifts.{" "}
+                <a className="text-blue-600 decoration-2 hover:underline font-medium">
                   said
                 </a>{" "}
                 Stewart Scott-Curran, Intercoms Director of Brand Design.
               </li>
               <li className="pl-2">
-                Preline opened a new way of sharing. Its a persistent way for
-                everyone to see and absorb each others work said David Scott,
-                Creative Director at{" "}
-                <a
-                  className="text-blue-600 decoration-2 hover:underline font-medium"
-                  href="#"
-                >
+                Explore our portfolio and join us in shaping the future of
+                gaming and technology. Together, we'll make your event an
+                unforgettable success.{" "}
+                <a className="text-blue-600 decoration-2 hover:underline font-medium">
                   Eventbrite
                 </a>
                 .
@@ -237,38 +232,23 @@ const BlogSection = () => {
             </ul>
 
             <p className="text-lg text-gray-800 dark:text-gray-200">
-              Small teams and individual designers need a space where they can
-              watch the design process unfold, both for themselves and for the
-              people they work with – no matter if is a fellow designer, product
-              manager, developer or client. Preline allows you to invite more
-              people into the process, creating a central place for conversation
-              around design. As those teams grow, transparency and collaboration
-              becomes integrated in how they communicate and work together.
+              With a finger on the pulse of industry trends and emerging
+              technologies, we deliver events that not only reflect the current
+              landscape but also anticipate future shifts. Partner with us to
+              elevate your presence in the gaming and tech space.
             </p>
 
             <div>
-              <a
-                className="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200"
-                href="#"
-              >
+              <a className="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200">
                 Plan
               </a>
-              <a
-                className="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200"
-                href="#"
-              >
-                Web development
+              <a className="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200">
+                Decoration
               </a>
-              <a
-                className="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200"
-                href="#"
-              >
-                Free
+              <a className="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200">
+                Responsibility
               </a>
-              <a
-                className="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200"
-                href="#"
-              >
+              <a className="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200">
                 Team
               </a>
             </div>
